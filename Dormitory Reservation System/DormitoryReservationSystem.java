@@ -23,7 +23,7 @@ public class DormitoryReservationSystem {
             Connection connection = DriverManager.getConnection(url, username, password);
             while(true){
                 System.out.println();
-                System.out.println("DORM RESERVATION SYSTEM");
+                System.out.println("DORMITORY RESERVATION SYSTEM");
                 Scanner scanner = new Scanner(System.in);
                 System.out.println("1. Reserve a room");
                 System.out.println("2. View Reservations");
@@ -77,7 +77,7 @@ public class DormitoryReservationSystem {
             System.out.print("Enter contact number: ");
             String contactNumber = scanner.next();
 
-            String sql = "INSERT INTO reservations (guest_name, room_number, contact_number) " +
+            String sql = "INSERT INTO reservation (guest_name, room_number, contact_number) " +
                     "VALUES ('" + guestName + "', " + roomNumber + ", '" + contactNumber + "')";
 
             try (Statement statement = connection.createStatement()) {
@@ -95,7 +95,7 @@ public class DormitoryReservationSystem {
     }
 
     private static void viewReservations(Connection connection) throws SQLException {
-        String sql = "SELECT reservation_id, guest_name, room_number, contact_number, reservation_date FROM reservations";
+        String sql = "SELECT reservation_id, guest_name, room_number, contact_number, reservation_date FROM reservation";
 
         try (Statement statement = connection.createStatement();
              ResultSet resultSet = statement.executeQuery(sql)) {
@@ -129,7 +129,7 @@ public class DormitoryReservationSystem {
             System.out.print("Enter guest name: ");
             String guestName = scanner.next();
 
-            String sql = "SELECT room_number FROM reservations " +
+            String sql = "SELECT room_number FROM reservation " +
                     "WHERE reservation_id = " + reservationId +
                     " AND guest_name = '" + guestName + "'";
 
@@ -166,7 +166,7 @@ public class DormitoryReservationSystem {
             System.out.print("Enter new contact number: ");
             String newContactNumber = scanner.next();
 
-            String sql = "UPDATE reservations SET guest_name = '" + newGuestName + "', " +
+            String sql = "UPDATE reservation SET guest_name = '" + newGuestName + "', " +
                     "room_number = " + newRoomNumber + ", " +
                     "contact_number = '" + newContactNumber + "' " +
                     "WHERE reservation_id = " + reservationId;
@@ -195,7 +195,7 @@ public class DormitoryReservationSystem {
                 return;
             }
 
-            String sql = "DELETE FROM reservations WHERE reservation_id = " + reservationId;
+            String sql = "DELETE FROM reservation WHERE reservation_id = " + reservationId;
 
             try (Statement statement = connection.createStatement()) {
                 int affectedRows = statement.executeUpdate(sql);
@@ -213,7 +213,7 @@ public class DormitoryReservationSystem {
 
     private static boolean reservationExists(Connection connection, int reservationId) {
         try {
-            String sql = "SELECT reservation_id FROM reservations WHERE reservation_id = " + reservationId;
+            String sql = "SELECT reservation_id FROM reservation WHERE reservation_id = " + reservationId;
 
             try (Statement statement = connection.createStatement();
                  ResultSet resultSet = statement.executeQuery(sql)) {
