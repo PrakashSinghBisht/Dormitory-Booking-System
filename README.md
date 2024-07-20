@@ -1,14 +1,14 @@
-# Hotel Reservation System 🏨
+# Dormitory Reservation 🏨
 
-Welcome to the Hotel Reservation System, a Java-based application for managing hotel reservations efficiently. Whether you're running a small inn or a boutique hotel, this system simplifies the reservation process, enhances guest management, and keeps your business organized.
+Welcome to the Dormitory , a Java-based application for managing dorm reservations efficiently. If you want a spacious room in bugdet then this can be a one stop shop for you, this system simplifies the reservation process, enhances students management, and keeps you well organized.
 
 ## Features 🌟
 
-- **Reserve a Room:** Easily make new reservations by providing guest details, room numbers, and contact information.
+- **Reserve a Room:** Easily make new reservations by providing students details, room numbers, and contact information.
 
-- **View Reservations:** Get an overview of all current reservations, including guest names, room numbers, contact details, and reservation dates.
+- **View Reservations:** Get an overview of all current reservations, including students names, room numbers, contact details, and reservation dates.
 
-- **Edit Reservation Details:** Update guest names, room numbers, and contact information for existing reservations.
+- **Edit Reservation Details:** Update students names, room numbers, and contact information for existing reservations.
 
 - **Delete Reservations:** Remove reservations that are no longer needed.
 
