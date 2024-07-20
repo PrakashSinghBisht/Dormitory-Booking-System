@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 
 
 
-public class HotelReservationSystem {
+public class DormitoryReservationSystem {
     private static final String url = "jdbc:mysql://localhost:3306/hotel_db";
     private static final String username = "root";
     private static final String password = "Prakash@1";
@@ -23,7 +23,7 @@ public class HotelReservationSystem {
             Connection connection = DriverManager.getConnection(url, username, password);
             while(true){
                 System.out.println();
-                System.out.println("HOTEL MANAGEMENT SYSTEM");
+                System.out.println("DORM RESERVATION SYSTEM");
                 Scanner scanner = new Scanner(System.in);
                 System.out.println("1. Reserve a room");
                 System.out.println("2. View Reservations");
@@ -236,7 +236,7 @@ public class HotelReservationSystem {
             i--;
         }
         System.out.println();
-        System.out.println("ThankYou For Using Hotel Reservation System!!!");
+        System.out.println("ThankYou For Using Dormitory Reservation System!!!");
     }
 }
 
