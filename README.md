@@ -1,6 +1,6 @@
 # Dormitory Reservation 🏨
 
-Welcome to the Dormitory , a Java-based application for managing dormitories reservations efficiently. If you want a spacious room in bugdet then this can be a one stop shop for you, this system simplifies the reservation process, enhances students management, and keeps you well organized.
+Welcome to Dormitory Reservation! This Java-based app is your go-to solution for managing dorm bookings, especially for students coming from abroad for their master’s programs. Looking for a spacious room without breaking the bank? We've got you covered! Our system makes reserving a room a breeze, helps you stay on top of student management, and keeps everything organized in one easy place.
 
 ## Features: 
 
