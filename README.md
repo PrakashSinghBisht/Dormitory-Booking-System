@@ -12,15 +12,14 @@ Welcome to Dormitory Reservation! This Java-based app is your go-to solution for
 
 - **Delete Reservations:** Remove reservations that are no longer needed.
 
-### Prerequisites
-
-- Core Java
-- JDBC
-- MySQL Basic Commands
-
 ### Usage 📋
 - Upon running the application, you'll be presented with a menu to choose your desired operation (reservation, viewing, editing, or exiting).
 
 - Follow the prompts to input reservation details, view current reservations, edit existing bookings, and more.
 
+### Prerequisites
+- Core Java
+- JDBC
+- MySQL Basic Commands
+  
 ### Happy booking! 🌆
