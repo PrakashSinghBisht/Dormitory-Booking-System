@@ -8,9 +8,6 @@ import java.sql.ResultSet;
 
 
 public class DormitoryReservationSystem {
-    private static final String url = "jdbc:mysql://localhost:3306/dorm_db";
-    private static final String username = "root";
-    private static final String password = "Prakash@1";
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
         try{
@@ -20,7 +17,8 @@ public class DormitoryReservationSystem {
         }
 
         try{
-            Connection connection = DriverManager.getConnection(url, username, password);
+            Connection connection = DriverManager.getConnection(DbConfig.url, DbConfig.username, 
+            		DbConfig.password);
             while(true){
                 System.out.println();
                 System.out.println("DORMITORY RESERVATION SYSTEM");
