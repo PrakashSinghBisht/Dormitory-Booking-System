@@ -11,6 +11,7 @@ public class DormitoryReservationSystem {
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
     	System.out.println("Hi Date: 28/09/2025");
+    	System.out.println("I am testing");
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
         }catch (ClassNotFoundException e){
