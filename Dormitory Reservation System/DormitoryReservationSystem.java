@@ -10,6 +10,7 @@ import java.sql.ResultSet;
 public class DormitoryReservationSystem {
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
+    	System.out.println("Hi Date: 27/09/2025");
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
         }catch (ClassNotFoundException e){
